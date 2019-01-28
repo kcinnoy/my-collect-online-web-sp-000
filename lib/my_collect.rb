@@ -3,8 +3,7 @@ def my_collect(array)
   i = 0
   new_array =[]
   while i < array.length
-    yield |lang|
-    new_array << lang.upcase
+    new_array << yield (array[i]).upcase
     i +=1
   end
   else
