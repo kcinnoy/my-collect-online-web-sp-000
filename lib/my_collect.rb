@@ -3,9 +3,8 @@ def my_collect(array)
   i = 0
   new_array =[]
   while i < array.length
-    yield do |e|
+    yield |e|
       new_array << e.upcase
-    end
   end
   else
     puts "Hey! No block was given!"
