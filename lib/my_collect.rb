@@ -4,10 +4,10 @@ def my_collect(array)
   new_array =[]
   while i < array.length
     yield |e|
-      new_array << e.upcase
+    new_array << e.upcase
   end
   else
-    puts "Hey! No block was given!"
+    "Hey! No block was given!"
   end
   new_array
 end
