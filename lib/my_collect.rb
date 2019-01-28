@@ -5,6 +5,7 @@ def my_collect(array)
   while i < array.length
     yield |lang|
     new_array << lang.upcase
+    i +=1
   end
   else
     "Hey! No block was given!"
