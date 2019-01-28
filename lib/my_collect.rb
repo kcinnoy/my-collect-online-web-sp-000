@@ -6,7 +6,7 @@ def my_collect(array)
     yield do |e|
       new_array << e.upcase
     end
-  end 
+  end
   else
     puts "Hey! No block was given!"
   end
